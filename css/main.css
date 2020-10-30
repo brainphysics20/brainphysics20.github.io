@@ -265,8 +265,8 @@ a:active, a:visited, a:focus {
 	.nach h6 {
 		font-size: 5.5rem;
 	}
-	.nach-down {
-		bottom: 5rem;
+	.nach-down i{
+		bottom: 10rem;
 	}
 	.about h6 {
 		font-size: 6rem;
@@ -305,8 +305,8 @@ a:active, a:visited, a:focus {
 	
 }
 @media (min-width: 992px) and (max-width: 1300px){
-	.nach-down {
-		bottom: 5rem;
+	.nach-down i{
+		bottom: 10rem;
 	}
 	.about img {
 		max-width: 25rem;
