@@ -1,0 +1,312 @@
+body {
+	font-family: 'Amatic SC', cursive;
+	margin: 0 auto;
+}
+html {
+	font-size: 10px;
+}
+a:active, a:visited, a:focus {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+}
+
+.nach {
+	background: #fff url(../img/2.jpg) center center repeat;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	text-align: center;
+	display: table;
+	color: #000;
+}
+.nach .nach_1 {
+	margin: 0 auto;
+	display:table-cell;
+	vertical-align:middle;
+	background-color: rgba(255,255,255,0.85);
+	z-index: 1;
+}
+.nach h6 {
+	font-size: 7rem;
+	margin-bottom: 2.5rem;
+	font-weight: 300 bold;
+	text-transform: uppercase;
+	color: #D94932;
+}
+.nach .line {
+	width: 250px;
+	height: 0.3rem;
+	background-color: #D94932;
+	margin: 0 auto;
+} 
+.nach p {
+	font-size: 3rem;
+	font-weight: 300;
+	color: #D94932;
+	margin-bottom: 15rem;
+}
+.nach-down i{
+	position: absolute;
+	z-index: 4;
+	bottom: 2rem;
+	display: inline-block;
+	font-size: 2.5rem;
+	width: 63px;
+	height: 63px;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	line-height: 60px;
+	left: 50%;
+	margin-left: -25px;
+	transition: 0.2s;
+}
+.nach-down i {
+	color: #D94932;
+}
+.nach-down i:hover {
+	border-color: #D94932;
+	background-color:#D94932;
+	color: #fff;
+}
+
+.about {
+	background: #002859 center center no-repeat;
+	width: 100%;
+	color: #fff;
+	position: relative;
+}
+.about h6{
+	text-align: center;
+	color: #fff;
+	font-size: 7rem;
+	font-weight: 300 bold;
+	text-transform: uppercase;
+	margin-top: 2rem;
+}
+.about .col-md-9 {
+	bottom: 11rem;
+}
+.about .col-md-9 p{
+	font-size: 2.9rem;
+}
+.about .col-md-3 {
+	bottom: 7rem;
+}
+.about img {
+	max-width: 27rem;
+	max-height: 27rem;
+	border-radius: 50%;
+}
+
+.uslugi {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	display: table;
+	background: #fff url(../img/1.jpg) center center repeat;
+}
+.uslugi .usl {
+	display:table-cell;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 1;
+}
+.uslugi h6{
+	text-align: center;
+	color: #D94932;
+	font-size: 7rem;
+	font-weight: 300 bold;
+	text-transform: uppercase;
+	margin-top: 2rem;
+}
+.uslugi .usl .col-md-3{
+	bottom: 7rem;
+}
+.uslugi .usl .col-md-3 .cicle{
+	width: 25rem;
+	height: 25rem;
+	border-radius: 50%;
+	background-color: #D94932;
+	display: table;
+}
+.uslugi .usl .col-md-3 .cicle:hover {
+	background-color: #002859;
+}
+.uslugi .usl .col-md-3 .cicle p{
+	color: #fff;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 5rem;
+	text-transform: uppercase;
+}
+.uslugi .usl .col-md-3 p{
+	font-size: 3rem;
+	text-align: center;
+}
+
+.skype {
+	background: #002859 center center no-repeat;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+.skype h6{
+	text-align: center;
+	color: #fff;
+	font-size: 7rem;
+	font-weight: 300 bold;
+	text-transform: uppercase;
+	margin-top: 2rem;
+}
+.skype .crug {
+	margin-top: -10rem;
+}
+.skype .crug img{
+	width: 25rem;
+	height: 25rem;
+	border-radius: 50%;
+}
+.skype .col-md-4 {
+	margin-top: 7rem;
+	margin-bottom: 7rem;
+}
+.skype .col-md-4:nth-child(1){
+	text-align: right;
+}
+.skype .col-md-4:nth-child(3){
+	text-align: left;
+}
+.skype .col-md-4 i{
+	color: #fff;
+	font-size: 6rem;
+}
+.skype .tg i:hover {
+	color: #D94932;
+}
+.skype .vk i:hover {
+	color: #D94932;
+}
+.skype .ph i {
+	color: #D94932;
+}
+.skype .ph i:hover {
+	color: #fff;
+}
+
+/* прелоадер */
+.preloader {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  perspective: 1600px;
+  perspective-origin: 20% 50%;
+  transition: 0.5s all;
+  opacity: 1;
+}
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #D94932; /*подобрать цвета в куллере*/
+  border-top: 3px solid #FFF;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: spin 1s infinite linear;
+}
+.preloader.fade {
+  opacity: 0;
+}
+.b-ico-preloader {
+  background: url(http://weblaboratory.in.ua/wp-content/themes/graphy/images/new_logo.svg);
+  background-size: cover;
+  width: 52px;
+  height: 67px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: ico 5s infinite linear;
+  transform-style: preserve-3d;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ico {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+/* */
+
+/* Адаптация (нюансы) */
+@media (min-width: 0px) and (max-width: 991px) {
+	html {
+		font-size: 7px;
+	}
+	.nach h6 {
+		font-size: 5.5rem;
+	}
+	.about h6 {
+		font-size: 6rem;
+	}
+	.about .col-md-9{
+		bottom: 13rem;
+	}
+	.about .col-md-9 p{
+		font-size: 3rem;
+	}
+	.about .col-md-3{
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	
+	.uslugi {
+		background: #fff;
+	}
+	.uslugi .usl .col-md-3{
+		bottom: 10rem;
+	}
+	.uslugi .usl .col-md-3 .cicle{
+		margin: 0 auto;
+	}
+	
+	
+	.skype .col-md-4:nth-child(1){
+		text-align: center;
+	}
+	.skype .col-md-4:nth-child(3){
+		text-align: center;
+	}
+	.skype .col-md-4 i{
+		font-size: 8rem;
+	}
+	
+}
+@media (min-width: 992px) and (max-width: 1300px){
+	.about img {
+		max-width: 25rem;
+		max-height: 25rem;
+	}
+	.uslugi .usl .col-md-3{
+		bottom: 10rem;
+	}
+}
